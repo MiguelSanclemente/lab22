@@ -3,16 +3,20 @@
 #include <string>
 using namespace std;
 
-namespace Persona {
+
 
 class Persona {
-    private:
-    virtual int idCliente;
-    virtual string nombre;
-    virtual string fechaNacimiento;
+public:
+    void set_nombre();
+    void set_fechaNacimiento();
+    virtual void set_info();
+    virtual void mostrar_info();
+    string nombre;
+    string fechaNacimiento;
 
+    Persona();
 };
 
-} // Persona
+
 
 #endif //PERSONA_H

@@ -1,35 +1,37 @@
 #include "Cliente.h"
+
 #include <iostream>
-#include <string>
 
 using namespace std;
 
-Cliente::Cliente(int id, string nombre, string fechaNac) : idCliente(id), nombre(nombre), fechaNacimiento(fechaNac) {}
+    Cliente::Cliente() {}
 
-int Cliente::getIdCliente() {
-    return idCliente;
-}
+    void Cliente::set_idCliente() {
+        cout << "Ingresa el id: ";
+        cin >>this-> idCliente;
+        cin.ignore();
 
-void Cliente::setIdCliente(int id) {
-    idCliente = id;
-}
+    }
 
-string Cliente::getNombre() {
-    return nombre;
-}
+    void Cliente::set_dineroCliente() {
+        cout << "Cuanto dinero tiene: " << endl;
+        cin >> this-> dineroCliente;
+        cin.ignore();
+    }
 
-void Cliente::setNombre(string nombre) {
-    this->nombre = nombre;
-}
 
-string Cliente::getFechaNacimiento() {
-    return fechaNacimiento;
-}
+    void Cliente::set_info() {
+        Persona::set_info();
+        set_idCliente();
+        set_dineroCliente();
+    }
 
-void Cliente::setFechaNacimiento(string fechaNac) {
-    fechaNacimiento = fechaNac;
-}
+    void Cliente::mostrar_info() {
+        Persona::mostrar_info();
+        cout << "El Id es : " << this-> idCliente << " Y su monto de plata es: "
+        << this-> dineroCliente << endl;
+    }
 
-void Cliente::mostrarCliente() {
-    cout << "ID Cliente: " << idCliente << "\nNombre: " << nombre << "\nFecha de Nacimiento: " << fechaNacimiento << endl;
-}
+
+
+

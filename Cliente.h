@@ -2,29 +2,22 @@
 #define CLIENTE_H
 #include "Persona.h"
 
-#include <string>
-using namespace std;
 
-class Cliente: public Persona::Persona{
-private:
+
+
+class Cliente: public Persona {
+    public:
+    Cliente();
+    void set_idCliente();
+    void set_dineroCliente();
+    void set_info() override;
+    void mostrar_info() override;
     int idCliente;
-    string nombre;
-    string fechaNacimiento;
-
-public:
-    // Constructor
-    Cliente(int id, string nombre, string fechaNac);
-
-    // Getters y Setters
-    int getIdCliente();
-    void setIdCliente(int id);
-    string getNombre();
-    void setNombre(string nombre);
-    string getFechaNacimiento();
-    void setFechaNacimiento(string fechaNac);
+    double dineroCliente;
 
 
-    void mostrarCliente();
 };
 
-#endif
+
+
+#endif //CLIENTE_H
