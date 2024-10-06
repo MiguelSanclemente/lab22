@@ -8,7 +8,7 @@ using namespace std;
 
     void Cliente::set_idCliente() {
         cout << "Ingresa el id: ";
-        cin >>this-> idCliente;
+        cin >>this-> id;
         cin.ignore();
 
     }
@@ -28,7 +28,7 @@ using namespace std;
 
     void Cliente::mostrar_info() {
         Persona::mostrar_info();
-        cout << "El Id es : " << this-> idCliente << " Y su monto de plata es: "
+        cout << "El Id es : " << this-> id << " Y su monto de plata es: "
         << this-> dineroCliente << endl;
     }
 

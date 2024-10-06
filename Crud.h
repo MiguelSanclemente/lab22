@@ -1,8 +1,6 @@
 #ifndef CRUD_H
 #define CRUD_H
-using namespace std;
 
-namespace Crud {
 
 class Crud {
 public:
@@ -14,6 +12,5 @@ public:
 
 };
 
-} // crud
 
 #endif //CRUD_H

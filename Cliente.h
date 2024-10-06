@@ -12,7 +12,7 @@ class Cliente: public Persona {
     void set_dineroCliente();
     void set_info() override;
     void mostrar_info() override;
-    int idCliente;
+    int id;
     double dineroCliente;
 
 

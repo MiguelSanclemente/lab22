@@ -2,12 +2,13 @@
 
 #include "Cliente.h"
 #include "Persona.h"
+#include "Vector_Cliente.h"
 using namespace std;
 
 int main() {
-    Cliente p;
-    p.set_info();
-    p.mostrar_info();
+		Vector_Cliente v;
+		v.añadir();
+		v.mostrar();
 
     return 0;
 }
