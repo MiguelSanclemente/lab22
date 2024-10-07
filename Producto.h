@@ -14,6 +14,8 @@ class Producto {
     void set_cantidad();
     void set_precio();
     void set_fechaFabricacion();
+    virtual void set_info();
+    virtual void mostrar_info();
 
     string nombre;
     int id;
