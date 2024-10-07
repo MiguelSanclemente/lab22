@@ -11,6 +11,7 @@ using namespace std;
 
         string nombre;
         cout << "Ingrese el nombre del producto: " << endl;
+        cin >> nombre;
         this->nombre = nombre;
     }
 
@@ -62,8 +63,8 @@ using namespace std;
 
    void Producto::mostrar_info() {
 
-        cout << "Nombre: " << this->nombre << "; su id: " << this->id << "; cantidad: "
-        << this->cantidad << "; con un valor de: " << this->precio << "; Su fabricacion fue el: "
+        cout << "Nombre del producto: " << this->nombre << "; id: " << this->id << "; cantidad: "
+        << this->cantidad << "; con un valor de: $" << this->precio << "; Su fabricacion fue el: "
         << this->fechaFabricacion << endl;
    }
 

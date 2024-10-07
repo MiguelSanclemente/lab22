@@ -5,15 +5,14 @@
 #include "Producto.h"
 #include "Vector_Cliente.h"
 #include "Vector_Empleado.h"
+#include "Vector_Producto.h"
 using namespace std;
 
 int main() {
-		Producto p;
-		p.nombre();
-		p.idProducto();
-		p.cantidad();
-		p.precio();
-		p.fechaFabricacion();
+		Vector_Producto v;
+		v.añadir();
+		v.mostrar();
+
 
     return 0;
 }

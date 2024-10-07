@@ -5,6 +5,13 @@ using namespace std;
 
     Empleado::Empleado() {}
 
+
+    void Empleado::menuVenta() {
+
+
+    }
+
+
     void Empleado::set_idEmpleado() {
         cout << "Ingrese el id: ";
         cin >>this-> id;

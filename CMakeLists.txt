@@ -19,4 +19,6 @@ add_executable(LAB2 main.cpp
         Producto.h
         Vector_Producto.cpp
         Vector_Producto.h
+        Factura.cpp
+        Factura.h
 )
