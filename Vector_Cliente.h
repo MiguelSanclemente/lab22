@@ -14,7 +14,7 @@ class Vector_Cliente: public Crud
 	void mostrar() override;
 	void eliminar() override;
 	bool comprobar(const int& id);
-	std::vector <Cliente> vector_cliente;
+	vector <Cliente> vector_cliente;
 };
 
 

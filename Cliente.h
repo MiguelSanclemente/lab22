@@ -1,4 +1,4 @@
-#ifndef CLIENTE_H
+s#ifndef CLIENTE_H
 #define CLIENTE_H
 #include "Persona.h"
 

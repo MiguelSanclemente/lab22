@@ -2,6 +2,7 @@
 #include "Funciones.h"
 #include <iostream>
 #include <vector>
+using namespace std;
 
 
 Vector_Cliente::Vector_Cliente(){}
@@ -18,8 +19,9 @@ void Vector_Cliente::añadir()
 {
 	Cliente obj;
 	obj.set_info();
-	while (comprobar(obj.id) == true)
+	while (comprobar(obj.id) == true )
 	{
+		cout << "El id que usted ingreso ya se encuentra en uso: " << endl;
 		obj.set_idCliente();
 	}
 	this->vector_cliente.push_back(obj);
@@ -27,19 +29,20 @@ void Vector_Cliente::añadir()
 
 void Vector_Cliente::actualizar()
 {
+
 	int id;
-	std::cout << "ingrese el id del cliente que quiere actualizar" << std::endl;
-	std::cin >> id;
-	std::cin.ignore();
+	cout << "ingrese el id del cliente que quiere actualizar" << endl;
+	cin >> id;
+	cin.ignore();
 	int resultado = busqueda_binaria(this->vector_cliente,id);
 	if (resultado != -1)
 	{
-		std::cout << "se encontro el cliente a actualizar" << std::endl;
+		cout << "se encontro el cliente a actualizar" << endl;
 		this->vector_cliente[resultado].set_info();
 		return;
 	}else
 	{
-		std::cout << "no se encontro cliente a actualizar" << std::endl;
+		cout << "no se encontro cliente a actualizar" << endl;
 	}
 }
 
@@ -55,16 +58,16 @@ void Vector_Cliente::mostrar()
 void Vector_Cliente::eliminar()
 {
 	int id;
-	std::cout << "ingrese el id que va a eliminar" << std::endl;
-	std::cin >> id;
-	std::cin.ignore();
+	cout << "ingrese el id que va a eliminar" << endl;
+	cin >> id;
+	cin.ignore();
 	int resultado = busqueda_binaria(this->vector_cliente,id);
 	if(resultado != -1)
 	{	
 		this->vector_cliente.erase(this->vector_cliente.begin() + resultado);
-		std::cout << "se elimino el cliente correctamente" << std::endl;
+		cout << "se elimino el cliente correctamente" << endl;
 		return;
 	}else 
-		std::cout << "no se encontro el cliente a eliminar" << std::endl;
+		cout << "no se encontro el cliente a eliminar" << endl;
 	return;
 }

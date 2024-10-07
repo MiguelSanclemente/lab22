@@ -13,7 +13,7 @@ using namespace std;
 
     void Persona::set_fechaNacimiento()
     {
-        regex comprobar(R"((0[1-9]|[12][1-9]|3[01])/(0[1-9]|1[0-2])/\d{4})");
+        regex comprobar(R"((0[0-9]|[12][0-9]|3[01])/(0[0-9]|1[0-2])/\d{4})");
         while (true)
         {
             string fecha;
