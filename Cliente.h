@@ -14,6 +14,7 @@ class Cliente: public Persona {
     void mostrar_info() override;
     int id;
     double dineroCliente;
+    static int id_global;
 
 
 };

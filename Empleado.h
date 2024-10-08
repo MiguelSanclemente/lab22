@@ -18,6 +18,7 @@ class Empleado: public Persona {
     int id;
     string puesto;
     long int salario;
+    static int id_global;
 
 
 

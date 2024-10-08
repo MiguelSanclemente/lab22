@@ -11,11 +11,12 @@ using namespace std;
 
     }
 
+    int Empleado::id_global = 100;
 
     void Empleado::set_idEmpleado() {
-        cout << "Ingrese el id: ";
-        cin >>this-> id;
-        cin.ignore();
+
+        this->id = id_global++;
+        cout << this->id << endl;
 
     }
 
