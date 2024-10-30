@@ -8,6 +8,8 @@
 class Cliente: public Persona {
     public:
     Cliente();
+
+    void set_menuCliente();
     void set_idCliente();
     void set_dineroCliente();
     void set_info() override;
@@ -15,6 +17,9 @@ class Cliente: public Persona {
     int id;
     double dineroCliente;
     static int id_global;
+
+    string menuCliente;
+
 
 
 };

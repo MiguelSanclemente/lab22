@@ -9,8 +9,6 @@ public:
     virtual void mostrar() = 0;
     virtual void eliminar() = 0;
 
-
 };
-
 
 #endif //CRUD_H

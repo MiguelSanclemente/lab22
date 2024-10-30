@@ -9,9 +9,10 @@
 using namespace std;
 
 int main() {
-		Vector_Producto v;
-		v.añadir();
-		v.mostrar();
+    Producto p;
+
+    p.set_menuProducto();
+
 
 
     return 0;

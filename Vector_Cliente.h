@@ -5,7 +5,7 @@
 #include <vector>
 
 
-class Vector_Cliente: public Crud 
+class Vector_Cliente: public Crud
 {
 	public:
 	Vector_Cliente();

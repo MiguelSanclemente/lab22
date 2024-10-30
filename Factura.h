@@ -15,8 +15,7 @@ class Factura {
     void set_fechaFactura();
     void set_totalFactura();
     void set_productoFactura();
-    void set_info() override;
-    void set_mostrar_info() override;
+
     int id1;
     int id2;
     string fechaFactura;

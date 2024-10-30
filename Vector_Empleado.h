@@ -7,7 +7,8 @@ using namespace std;
 
 
 
-class Vector_Empleado: public Crud{
+class Vector_Empleado: public Crud
+{
     public:
     Vector_Empleado();
     void añadir() override;
@@ -15,7 +16,7 @@ class Vector_Empleado: public Crud{
     void mostrar() override;
     void eliminar() override;
     bool comprobar(const int& id);
-    vector <Empleado> vector_empleado;
+    vector<Empleado> vector_empleado;
 
 
 };

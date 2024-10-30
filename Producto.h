@@ -9,6 +9,9 @@ class Producto {
     public:
     Producto();
 
+
+    void set_menuProducto();
+
     void set_nombre();
     void set_idProducto();
     void set_cantidad();
@@ -23,8 +26,8 @@ class Producto {
     float precio;
     string fechaFabricacion;
 
-
-
+    static int id_global;
+    string menuProducto;
 
 
 };

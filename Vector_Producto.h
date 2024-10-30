@@ -9,7 +9,7 @@ class Vector_Producto: public Crud
     public:
     Vector_Producto();
     void añadir() override;
-    void actualizar();
+    void actualizar() override;
     void mostrar() override;
     void eliminar() override;
     bool comprobar(const int& id);

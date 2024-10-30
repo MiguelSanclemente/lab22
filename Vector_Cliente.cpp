@@ -7,7 +7,7 @@ using namespace std;
 
 Vector_Cliente::Vector_Cliente(){}
 
-bool Vector_Cliente::comprobar(const int& id)
+bool Vector_Cliente::comprobar(const int &id)
 {
 	if(busqueda_binaria(this->vector_cliente,id) != -1)
 	{

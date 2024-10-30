@@ -2,13 +2,16 @@
 #define EMPLEADO_H
 #include <string>
 #include "Persona.h"
+#include <iostream>
+
 using namespace std;
 
 
 class Empleado: public Persona {
+
     public:
     Empleado();
-    void menuVenta();
+    void set_menuEmpleado();
     void set_idEmpleado();
     void set_puesto();
     void set_salario();
@@ -20,6 +23,7 @@ class Empleado: public Persona {
     long int salario;
     static int id_global;
 
+    string menuEmpleado;
 
 
 };

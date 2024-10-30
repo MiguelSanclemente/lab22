@@ -3,8 +3,6 @@
 #include <string>
 using namespace std;
 
-
-
 class Persona {
 public:
     void set_nombre();
