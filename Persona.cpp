@@ -7,7 +7,7 @@ using namespace std;
     void Persona::set_nombre()
     {
        string nombre;
-        cout << "Ingrese su nombre: "; cin >> nombre;
+        cout << "Ingrese el nombre: "; cin >> nombre;
         this->nombre = nombre;
     }
 
@@ -17,7 +17,7 @@ using namespace std;
         while (true)
         {
             string fecha;
-            cout << "ingrese su fecha de nacimiento en el formato(dd/mm/yyyy) : " << endl;
+            cout << "ingrese la fecha de nacimiento en el formato(dd/mm/yyyy) : " << endl;
             cin >> fecha;
             if(regex_match(fecha,comprobar))
             {
@@ -37,7 +37,7 @@ using namespace std;
     }
 
     void Persona::mostrar_info() {
-        cout << "Su Nombre: " <<this->nombre << " y Nacio el: " <<this->fechaNacimiento << endl;
+        cout << "Nombre: " <<this->nombre << " Nacio el: " <<this->fechaNacimiento << endl;
 
     }
 

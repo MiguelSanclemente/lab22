@@ -12,7 +12,7 @@ using namespace std;
         Vector_Empleado v;
         int opcion = 0;
         do {
-            cout << "Menu de opciones:" << endl;
+            cout << "Menu de Empleado:" << endl;
             cout << "1. Crear empleado" << endl;
             cout << "2. Actualizar empleado" << endl;
             cout << "3. Mostrar empleado" << endl;
@@ -48,7 +48,7 @@ using namespace std;
     void Empleado::set_idEmpleado() {
 
         this->id = id_global++;
-        cout << this->id << endl;
+        cout << "El id del empleado es: "<< this->id << endl;
 
     }
 

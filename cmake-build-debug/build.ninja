@@ -103,6 +103,12 @@ build CMakeFiles/LAB2.dir/Factura.cpp.obj: CXX_COMPILER__LAB2_unscanned_Debug C$
   OBJECT_DIR = CMakeFiles\LAB2.dir
   OBJECT_FILE_DIR = CMakeFiles\LAB2.dir
 
+build CMakeFiles/LAB2.dir/Menu.cpp.obj: CXX_COMPILER__LAB2_unscanned_Debug C$:/Users/USUARIO/Desktop/Lab2/Menu.cpp || cmake_object_order_depends_target_LAB2
+  DEP_FILE = CMakeFiles\LAB2.dir\Menu.cpp.obj.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\LAB2.dir
+  OBJECT_FILE_DIR = CMakeFiles\LAB2.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LAB2
@@ -111,7 +117,7 @@ build CMakeFiles/LAB2.dir/Factura.cpp.obj: CXX_COMPILER__LAB2_unscanned_Debug C$
 #############################################
 # Link the executable LAB2.exe
 
-build LAB2.exe: CXX_EXECUTABLE_LINKER__LAB2_Debug CMakeFiles/LAB2.dir/main.cpp.obj CMakeFiles/LAB2.dir/Persona.cpp.obj CMakeFiles/LAB2.dir/Cliente.cpp.obj CMakeFiles/LAB2.dir/Vector_Cliente.cpp.obj CMakeFiles/LAB2.dir/Empleado.cpp.obj CMakeFiles/LAB2.dir/Vector_Empleado.cpp.obj CMakeFiles/LAB2.dir/Producto.cpp.obj CMakeFiles/LAB2.dir/Vector_Producto.cpp.obj CMakeFiles/LAB2.dir/Factura.cpp.obj
+build LAB2.exe: CXX_EXECUTABLE_LINKER__LAB2_Debug CMakeFiles/LAB2.dir/main.cpp.obj CMakeFiles/LAB2.dir/Persona.cpp.obj CMakeFiles/LAB2.dir/Cliente.cpp.obj CMakeFiles/LAB2.dir/Vector_Cliente.cpp.obj CMakeFiles/LAB2.dir/Empleado.cpp.obj CMakeFiles/LAB2.dir/Vector_Empleado.cpp.obj CMakeFiles/LAB2.dir/Producto.cpp.obj CMakeFiles/LAB2.dir/Vector_Producto.cpp.obj CMakeFiles/LAB2.dir/Factura.cpp.obj CMakeFiles/LAB2.dir/Menu.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LAB2.dir

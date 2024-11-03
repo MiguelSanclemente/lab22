@@ -20,7 +20,7 @@ int Producto::id_global = 5000;
         int opcion = 0;
         do {
 
-            cout << "Menu de opciones:" << endl;
+            cout << "Menu de producto:" << endl;
             cout << "1. Crear Producto" << endl;
             cout << "2. Actualizar Producto" << endl;
             cout << "3. Mostrar Producto" << endl;

@@ -21,4 +21,6 @@ add_executable(LAB2 main.cpp
         Factura.cpp
         Factura.h
         Crud.h
+        Menu.cpp
+        Menu.h
 )

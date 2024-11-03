@@ -14,7 +14,7 @@ void Cliente::set_menuCliente() {
         int opcion = 0;
         do {
 
-            cout << "Menu de opciones:" << endl;
+            cout << "Menu de cliente:" << endl;
             cout << "1. Crear cliente" << endl;
             cout << "2. Actualizar cliente" << endl;
             cout << "3. Mostrar cliente" << endl;
@@ -50,7 +50,7 @@ void Cliente::set_menuCliente() {
         void Cliente::set_idCliente() {
 
             this->id = id_global++;
-            cout << "Su id es: " << this->id << endl;
+            cout << "El id de cliente es : " << this->id << endl;
         }
 
         void Cliente::set_dineroCliente() {
