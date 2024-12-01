@@ -4,6 +4,7 @@
 #include "Producto.h"
 #include <iostream>
 
+#include "Factura.h"
 #include "Vector_Producto.h"
 
 using namespace std;
@@ -53,6 +54,7 @@ void Menu::set_menuPrincipal() {
 
 void Menu::set_menuCompra() {
     int opcion = 0;
+    Factura f;
     do {
 
         cout << "Menu Compra" << endl;
@@ -73,17 +75,32 @@ void Menu::set_menuCompra() {
                 }
             }
 
-                break;
+            break;
 
             case 2: {
-
+                f.set_totalFactura();
+                cout << "esto es lo que debe pagar: ";
+                cout << f.totalFactura << endl;
+                float pagar = 0;
+                while (pagar < f.totalFactura) {
+                    cout << "ingrese el valor";
+                    cin >> pagar;
+                    cin.ignore();
+                }
+                cout << "su cambio es: " << pagar - f.totalFactura<< endl;
+                Menu::set_ver_factura(f);
+                break;
             }
-
-
-
-
         }
-
-
     }while (opcion != 3);
+}
+
+void Menu::set_ver_factura(Factura f) {
+    char c;
+    cout << "Desea ver su factura? Ingrese s para si, n para no" << endl;
+    cin >> c;
+    if (c == 's') {
+        f.set_generarFactura();
+    }
+    return;
 }
