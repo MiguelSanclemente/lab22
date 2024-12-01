@@ -4,6 +4,8 @@
 #include "Producto.h"
 #include <iostream>
 
+#include "Vector_Producto.h"
+
 using namespace std;
 
 Menu::Menu() {}
@@ -36,6 +38,7 @@ void Menu::set_menuPrincipal() {
                 p.set_menuProducto();
             break;
             case 4:
+                set_menuCompra();
                 break;
             case 5:
                 cout << "Chau" << endl;
@@ -48,3 +51,39 @@ void Menu::set_menuPrincipal() {
     }while ( opcion !=5);
 }
 
+void Menu::set_menuCompra() {
+    int opcion = 0;
+    do {
+
+        cout << "Menu Compra" << endl;
+        cout << "1. Seleccionar producto. " << endl;
+        cout << "2. comprar productos seleccionados. " << endl;
+        cout << "3. volver." << endl;
+        cin >> opcion;
+
+        switch (opcion) {
+            case 1: {
+                int id_producto_cliente;
+                int contador = 1;
+                for (auto i : Vector_Producto::vector_producto) {
+                    cout << contador << endl;
+                    i.mostrar_info();
+                    contador++;
+                    cin >> id_producto_cliente ;
+                }
+            }
+
+                break;
+
+            case 2: {
+
+            }
+
+
+
+
+        }
+
+
+    }while (opcion != 3);
+}

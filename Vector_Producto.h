@@ -13,7 +13,7 @@ class Vector_Producto: public Crud
     void mostrar() override;
     void eliminar() override;
     bool comprobar(const int& id);
-    vector <Producto> vector_producto;
+    static vector <Producto> vector_producto;
 
 };
 
