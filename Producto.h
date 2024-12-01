@@ -1,6 +1,7 @@
 #ifndef PRODUCTO_H
 #define PRODUCTO_H
 #include  <string>
+#include <iostream>
 using namespace std;
 
 

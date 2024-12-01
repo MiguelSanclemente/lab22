@@ -2,6 +2,8 @@
 #include "Vector_Producto.h"
 #include <iostream>
 #include <regex>
+#include <limits>
+
 
 using namespace std;
 
@@ -25,7 +27,7 @@ int Producto::id_global = 5000;
             cout << "2. Actualizar Producto" << endl;
             cout << "3. Mostrar Producto" << endl;
             cout << "4. Eliminar Producto" << endl;
-            cout << "5. Salir" << endl;
+            cout << "5. Volver" << endl;
             cin >> opcion;
 
             switch(opcion) //donde opción es la variable a comparar
@@ -42,7 +44,9 @@ int Producto::id_global = 5000;
                 case 4:
                     v.eliminar();
                 break;
-
+                case 5:
+                    cout << "Chau" << endl;
+                break;
                 default:
                     cout << "papi, marque eso bien pelele" << endl;
                 break;
@@ -61,10 +65,21 @@ int Producto::id_global = 5000;
 
 
         void Producto::set_cantidad() {
-            cout <<"Ingrese el cantidad: " << endl;
-            cin >> this-> cantidad;
-            cin.ignore();
-        }
+        do {
+            cout << "Ingrese la cantidad (solo números no negativos): " << endl;
+            cin >> this->cantidad;
+
+            if (cin.fail()) {
+                cin.clear();
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
+                this->cantidad = -1;
+                cout << "Entrada no válida. Por favor, ingrese un número entero.\n";
+            } else if (this->cantidad < 0) {
+                cout << "La cantidad no puede ser negativa. Intente de nuevo.\n";
+            }
+        } while (this->cantidad < 0);
+        cin.ignore();
+    }
 
 
         void Producto::set_precio() {

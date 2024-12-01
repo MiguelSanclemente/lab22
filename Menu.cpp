@@ -26,15 +26,19 @@ void Menu::set_menuPrincipal() {
 
         switch (opcion) {
             case 1:
-                e.set_menuEmpleado();
+                c.set_menuCliente();
             break;
             case 2:
-                c.set_menuCliente();
+                e.set_menuEmpleado();
+
             break;
             case 3:
                 p.set_menuProducto();
             break;
             case 4:
+                break;
+            case 5:
+                cout << "Chau" << endl;
                 break;
             default:
                 cout << "Marque las respuestas que es" << endl;

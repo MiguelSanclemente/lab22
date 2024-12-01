@@ -17,7 +17,7 @@ using namespace std;
             cout << "2. Actualizar empleado" << endl;
             cout << "3. Mostrar empleado" << endl;
             cout << "4. Eliminar empleado" << endl;
-            cout << "5. Salir" << endl;
+            cout << "5. Volver" << endl;
             cin >> opcion;
 
             switch(opcion) //donde opción es la variable a comparar
@@ -34,7 +34,9 @@ using namespace std;
                 case 4:
                     v.eliminar();
                 break;
-
+                case 5:
+                    cout << "chau" << endl;
+                break;
                 default:
                     cout << "papi, marque eso bien pelele" << endl;
                 break;

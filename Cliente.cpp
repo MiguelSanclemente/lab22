@@ -19,7 +19,7 @@ void Cliente::set_menuCliente() {
             cout << "2. Actualizar cliente" << endl;
             cout << "3. Mostrar cliente" << endl;
             cout << "4. Eliminar cliente" << endl;
-            cout << "5. Salir" << endl;
+            cout << "5. Volver" << endl;
             cin >> opcion;
 
             switch(opcion) //donde opción es la variable a comparar
@@ -35,6 +35,9 @@ void Cliente::set_menuCliente() {
                 break;
                 case 4:
                     v.eliminar();
+                break;
+                case 5:
+                    cout << "chau" <<endl;
                 break;
 
                 default:
